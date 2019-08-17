@@ -105,6 +105,10 @@ a:visited {
   fill: currentColor;
 }
 
+.mag-span svg {
+  background-color: white;
+}
+
 .nav-links {
   display: flex;
   justify-content: space-around;
