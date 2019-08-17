@@ -26,10 +26,6 @@ a:hover {
   color: #4285f4;
 }
 
-a:visited {
-  color: #660099;
-}
-
 .logo-container {
   text-align: center;
   padding: 7px 28px 0 30px;
@@ -74,7 +70,7 @@ a:visited {
 .search-buttons-container {
   position: absolute;
   right: 0;
-  margin: 2px 2px 0 0;
+  margin: 2px 5px 0 0;
   height: 40px;
   display: flex;
   align-items: center;
@@ -153,6 +149,32 @@ a:visited {
   margin-right: 5px;
   vertical-align: text-bottom;
   fill: currentColor;
+}
+
+.right-links {
+  cursor: pointer;
+}
+
+#tools-button {
+  padding: 6px 11px;
+  border: 1px solid white;
+  outline: none;
+}
+
+#tools-button:hover {
+  background-color: #f8f8f8;
+  background-image: -webkit-linear-gradient(top, #f8f8f8, #f1f1f1);
+  color: currentColor;
+  border: 1px solid #c6c6c6;
+  border-radius: 2px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+#tools-button:active {
+  background-color: #f6f6f6;
+  background-image: -webkit-linear-gradient(top, #f6f6f6, #f1f1f1);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  color: black;
 }
 
 .spacing {
@@ -460,6 +482,15 @@ hr {
   align-items: flex-end !important;
 }
 
+.nav-link-current {
+  cursor: default;
+}
+
+.nav-number-current {
+  color: black;
+  cursor: text;
+}
+
 .logo-gle {
   background: url(../images/nav_logo299.png) no-repeat;
   background-position: -96px 0;
@@ -472,4 +503,47 @@ hr {
 .nav-next-text {
   position: relative;
   left: 12px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  padding-left: 170px;
+  padding-top: 8px;
+  border-top: 1px solid #e4e4e4;
+  background: #f2f2f2;
+}
+
+footer a {
+  color: #5f6368;
+}
+
+footer a:visited {
+  color: #5f6368;
+}
+
+footer a:hover {
+  color: #333;
+}
+
+.circle {
+  border-radius: 100%;
+  display: inline-block;
+  height: 10px;
+  margin: 6px 4px 9px 0;
+  vertical-align: middle;
+  width: 10px;
+  background: #9e9e9e;
+}
+
+.location-text {
+  color: #333;
+}
+
+.links-container-row ul {
+  display: flex;
+}
+
+.links-container-row li {
+  margin-right: 27px;
 }
