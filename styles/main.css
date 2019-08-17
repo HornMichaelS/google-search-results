@@ -400,3 +400,72 @@ hr {
   color: #1A0DAB;
   font-size: 14px;
 }
+
+.pages-nav-container {
+  margin-top: 30px;
+  width: 606px;
+  position: relative;
+  left: -20px;
+}
+
+.pages-nav-container ul {
+  display: flex;
+  justify-content: center;
+}
+
+.page-links-list li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #4285f4;
+  font-size: 14px;
+}
+
+.nav-logo {
+  font-size: 0;
+}
+
+.logo-g {
+  background: url(/images/nav_logo299_hr.webp) no-repeat;
+  background-position: -24px 0;
+  background-size: 167px;
+  width: 28px;
+  height: 40px;
+  display: block;
+}
+
+.logo-red-o {
+  background: url(/images/nav_logo299_hr.webp) no-repeat;
+  background-position: -53px 0;
+  background-size: 167px;
+  width: 20px;
+  height: 40px;
+  display: block;
+}
+
+.logo-yellow-o {
+  background: url(/images/nav_logo299_hr.webp) no-repeat;
+  background-position: -74px 0;
+  background-size: 167px;
+  width: 20px;
+  height: 40px;
+  display: block;
+}
+
+.nav-link-next {
+  align-items: flex-end !important;
+}
+
+.logo-gle {
+  background: url(/images/nav_logo299_hr.webp) no-repeat;
+  background-position: -96px 0;
+  background-size: 167px;
+  width: 71px;
+  height: 40px;
+  display: block;
+}
+
+.nav-next-text {
+  position: relative;
+  left: 12px;
+}
