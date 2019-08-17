@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles/main.css">
+  <title>Google Clone</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo-container">
+      <a href="https://www.google.com">
+        <img src="images/doodle.png" alt="Today's Doodle" height="30">
+      </a>
+    </div>
+    <div class="search-bar-container">
+      <form class="search-bar-form" action="#">
+        <div class="input-container">
+          <input type="text" value="build this webpage">
+          <div class="search-buttons-container">
+            <button id="voice-button" aria-label="Search by voice" role="button">Search By Voice</button>
+            <button id="search-button">
+              Search
+              <div class="magnifying-glass-container">
+                <span class="mag-span">
+                  <svg focusable="false" viewBox="0 0 24 24">
+                    <path
+                      d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+                    </path>
+                  </svg>
+                </span>
+              </div>
+            </button>
+          </div>
+        </div>
+      </form>
+
+      <nav class="nav-links">
+        <ul class="left-links">
+          <li>
+            <a class="selected-link" href="">
+              <span class="link-image-container" style="height:16px;width:16px;display:inline-block;">
+                <img
+                  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjxwYXRoIGZpbGw9IiMzNEE4NTMiIGQ9Ik0xMCAydjJhNiA2IDAgMCAxIDYgNmgyYTggOCAwIDAgMC04LTh6Ii8+PHBhdGggZmlsbD0iI0VBNDMzNSIgZD0iTTEwIDRWMmE4IDggMCAwIDAtOCA4aDJjMC0zLjMgMi43LTYgNi02eiIvPjxwYXRoIGZpbGw9IiNGQkJDMDQiIGQ9Ik00IDEwSDJhOCA4IDAgMCAwIDggOHYtMmMtMy4zIDAtNi0yLjY5LTYtNnoiLz48cGF0aCBmaWxsPSIjNDI4NUY0IiBkPSJNMjIgMjAuNTlsLTUuNjktNS42OUE3Ljk2IDcuOTYgMCAwIDAgMTggMTBoLTJhNiA2IDAgMCAxLTYgNnYyYzEuODUgMCAzLjUyLS42NCA0Ljg4LTEuNjhsNS42OSA1LjY5TDIyIDIwLjU5eiIvPjwvc3ZnPgo="
+                  alt="">
+              </span>
+              All
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span class="link-image-container" style="height:16px;width:16px;display:inline-block;"><svg
+                  focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 0h24v24H0z" fill="none"></path>
+                  <path
+                    d="M12 11h6v2h-6v-2zm-6 6h12v-2H6v2zm0-4h4V7H6v6zm16-7.22v12.44c0 1.54-1.34 2.78-3 2.78H5c-1.64 0-3-1.25-3-2.78V5.78C2 4.26 3.36 3 5 3h14c1.64 0 3 1.25 3 2.78zM19.99 12V5.78c0-.42-.46-.78-1-.78H5c-.54 0-1 .36-1 .78v12.44c0 .42.46.78 1 .78h14c.54 0 1-.36 1-.78V12zM12 9h6V7h-6v2z">
+                  </path>
+                </svg></span>
+              News
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span class="link-image-container" style="height:16px;width:16px;display:inline-block;"><svg
+                  focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path clip-rule="evenodd" d="M0 0h24v24H0z" fill="none"></path>
+                  <path clip-rule="evenodd"
+                    d="M10 16.5l6-4.5-6-4.5v9zM5 20h14a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1zm14.5 2H5a3 3 0 0 1-3-3V4.4A2.4 2.4 0 0 1 4.4 2h15.2A2.4 2.4 0 0 1 22 4.4v15.1a2.5 2.5 0 0 1-2.5 2.5z"
+                    fill-rule="evenodd"></path>
+                </svg></span>
+              Videos
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span class="link-image-container" style="height:16px;width:16px;display:inline-block;"><svg
+                  focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 0h24v24H0V0z" fill="none"></path>
+                  <path
+                    d="M20.08 15.03l-.08.08v3.87c0 .44-.28.8-.67.93L12.41 13l2.2-2.2c-.36-.58-.71-1.18-1.02-1.81L4 18.58V4.99a1 1 0 0 1 1-1h7.57c.09-.72.29-1.39.58-2H5c-1.64 0-3 1.36-3 3v13.99c0 1.64 1.36 3 3 3h14a3 3 0 0 0 3-2.99v-6.21a27.8 27.8 0 0 1-1.92 2.25zM12 19.99H5.41l5.58-5.58 5.57 5.57H12v.01zM19 0c-3 0-5 1.99-5 4.99 0 3.82 5 9 5 9s5-5.18 5-9c0-3-2-4.99-5-4.99zm0 6.74c-.96 0-1.75-.79-1.75-1.75s.79-1.75 1.75-1.75 1.75.79 1.75 1.75-.79 1.75-1.75 1.75z">
+                  </path>
+                </svg></span>
+              Maps
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span class="link-image-container" style="height:16px;width:16px;display:inline-block;"><svg
+                  focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 0h24v24H0V0z" fill="none"></path>
+                  <path
+                    d="M21.11 2.89A3.02 3.02 0 0 0 18.95 2h-5.8c-.81 0-1.58.31-2.16.89L7.25 6.63 2.9 10.98a3.06 3.06 0 0 0 0 4.32l5.79 5.8a3.05 3.05 0 0 0 4.32.01l8.09-8.1c.58-.58.9-1.34.9-2.16v-5.8c0-.81-.32-1.59-.89-2.16zM20 10.85c0 .28-.12.54-.32.74l-3.73 3.74-4.36 4.36c-.41.41-1.08.41-1.49 0l-2.89-2.9-2.9-2.9a1.06 1.06 0 0 1 0-1.49l8.1-8.1c.2-.2.46-.3.74-.3l5.8-.01A1.05 1.05 0 0 1 20 5.05v5.8zM16 6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2z">
+                  </path>
+                </svg></span>
+              Shopping
+            </a>
+
+          </li>
+          <li>
+            <a href="">
+              <span class="link-image-container"
+                style="height:16px;width:16px;display:inline-block;line-height: 16px;"><svg focusable="false"
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path
+                    d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z">
+                  </path>
+                </svg></span>
+              More
+            </a>
+          </li>
+        </ul>
+        <ul class="right-links">
+          <li><a href="#">Settings</a></li>
+          <li><a href="#">Tools</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="spacing"></div>
+    <div class="nav-right-container">
+      <div class="grid"></div>
+      <div class="profile"></div>
+    </div>
+  </header>
+  <main>
+    <p class="metadata">About 93,500,000 results (0.40 seconds)</p>
+    <div class="search-result-links-container">
+      <ul class="search-result-links-list">
+        <li class="link-group">
+          <a href="">
+            <h3 class="link-title">build this webpage - GitHub Pages</h3>
+            <p class="link-href">https://christine-27.github.io/google-homepage/</p>
+          </a>
+          <p class="link-summary">With zero coding experience, artist <em>building</em> 180 <em>webpages</em> in 180
+            days ... <em>build</em> <em>this</em>
+            <em>webpage</em> - Google Search https://aryavansh.github.io/googleresults.</p>
+          <hr>
+        </li>
+        <li class="link-group">
+          <a href="">
+            <h3 class="link-title">build this webpage - GitHub Pages</h3>
+            <p class="link-href">https://victor-lf.github.io/google-search-results/</p>
+          </a>
+          <p class="link-summary">With zero coding experience, artist <em>building</em> 180 <em>webpages</em> in 180
+            days ... <em>build</em> <em>this</em>
+            <em>webpage</em> - Google Search https://aryavansh.github.io/googleresults.</p>
+          <hr>
+        </li>
+        <li class="link-group">
+          <a href="" class="link-title truncated">With zero coding experience, artist building 180 webpages in 180</a>
+          <p class="link-href truncated">https://arstechnica.com/.../with-zero-coding-experience-artist-building-180-
+          </p>
+          <div class="summary-group">
+            <span class="date">Jul 26, 2013 -</span>
+            <span class="link-summary truncated">117 days ago, having never done any programming in her life, Jennifer
+              Dewalt <em>built</em> her first <em>webpage.</em> The next day, she <em>built</em> another, and she</span>
+          </div>
+        </li>
+        <li class="link-group">
+          <a href="" class="link-title">Learning to Code By Building A Website a Day - Jennifer Dewalt</a>
+          <p class="link-href truncated">blog.jenniferdewalt.com/.../im-learning-to-code-by-building-180-websites-</p>
+          <div class="summary-group">
+            <span class="date">Jul 24, 2013 -</span>
+            <span class="link-summary truncated"> I'm learning to code by <em>building</em> 180 <em>websites</em> in 180
+              days. Today is
+              day 115. A little over 4 months ago, I decided I was going to learn to code.</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <br>
+    <div class="videos-container">
+      <h3>Videos</h3>
+      <ul class="videos-list">
+        <li class="video-list-item">
+          <div class="video-image">
+            <img
+              src="data:image/jpeg;base64,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"
+              alt="">
+            <span class="play-button"></span>
+            <span class="video-duration">16:58</span>
+          </div>
+          <div class="video-details">
+            <a class="video-title" href="">How To Build a Website From Scratch [IN 20 MINS]</a>
+            <p class="subtitle">Learn How Today</p>
+            <p class="citation">
+              <span class="video-source-text">YouTube</span>
+              <span class="posted-date-text">- Mar 31, 2016</span>
+            </p>
+          </div>
+        </li>
+        <li class="video-list-item">
+          <div class="video-image">
+            <img
+              src="data:image/jpeg;base64,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"
+              alt="">
+            <span class="play-button"></span>
+            <span class="video-duration">14:08</span>
+          </div>
+          <div class="video-details">
+            <a class="video-title" href="">How to Build A Website with WordPress - Super Easy Tutorial!</a>
+            <p class="subtitle">Let's Build Wordpress --</p>
+            <p class="citation">
+              <span class="video-source-text">YouTube</span>
+              <span class="posted-date-text">- Feb, 2014</span>
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <br>
+    <div class="search-result-links-container">
+      <ul class="search-result-links-list">
+        <li class="link-group">
+          <a href="" class="link-title">How to Create a Website: Step-by-Step Guide for Beginners (2019)</a>
+          <p class="link-href">https://websitesetup.org/</p>
+          <div class="summary-group">
+            <span class="date">Apr 25, 2019 -</span>
+            <span class="link-summary truncated"> Learn how to make a <em>website</em> and set it up. <em>This</em> site
+              contains
+              different tutorials on how to <em>build</em> a <em>website</em> using WordPress, Joomla, Drupal ...</span>
+          </div>
+          <hr>
+        </li>
+        <li class="link-group">
+          <a href="" class="link-title">Free Website Builder For Your Business - Google My Business</a>
+          <p class="link-href">https://www.google.com › Google My Business › How It Works</p>
+          <p class="link-summary">Google My Business can automatically generate a <em>website</em> for you for free
+            using info
+            from your Business Profile, and you can edit it anytime.</p>
+          <hr>
+        </li>
+        <li class="link-group">
+          <a href="" class="link-title">Squarespace: Build a Website – Website Builder</a>
+          <p class="link-href truncated">https://www.squarespace.com/</p>
+          <p class="link-summary">Squarespace is the all-in-one solution for anyone looking to create a beautiful
+            <em>website.</em> Domains, eCommerce, hosting, galleries, analytics, and 24/7 support all ...</p>
+        </li>
+        <li class="link-group">
+          <a href="" class="link-title">Webnode: Create a free website easily | Free website builder</a>
+          <p class="link-href truncated">https://www.webnode.com/</p>
+          <p class="link-summary">Create your own <em>website</em> for free! You can create an amazing <em>website</em>
+            with Webnode in
+            just minutes. Join our 30 million users and <em>build</em> one yourself. Get Started.</p>
+        </li>
+        <li class="link-group">
+          <a href="" class="link-title">Make a Website: Free Tutorial | Codecademy</a>
+          <p class="link-href truncated">https://www.codecademy.com/learn/make-a-website</p>
+          <p class="link-summary">Explore HTML & CSS fundamentals as you <em>build</em> a <em>website</em> in
+            <em>this</em> ... You'll <em>build</em> four
+            simple <em>websites</em> using <em>web</em> development fundamentals, including HTML5, ...</p>
+        </li>
+      </ul>
+    </div>
+    <div class="related-search-container">
+      <p class="related-search-header">Related Search</p>
+      <h3>Top website <em>builder</em> software</h3>
+      <ul>
+        <li>
+          <a href="" class="related-search-link">
+            <img src="" alt="">
+            <span>WordPress</span>
+          </a>
+        </li>
+        <li>
+          <a href="" class="related-search-link">
+            <img src="" alt="">
+            <span>Weebly</span>
+          </a>
+        </li>
+        <li>
+          <a href="" class="related-search-link">
+            <img src="" alt="">
+            <span>Shopify</span>
+          </a>
+        </li>
+        <li>
+          <a href="" class="related-search-link">
+            <img src="" alt="">
+            <span>Webnode</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="pages-nav-container">
+      <ul class="page-links-list">
+        <li><span class="logo-g">G</span></li>
+        <li><a href=""><span class="logo-red-o">o </span><span>1</span></a></li>
+        <li><a href=""><span class="logo-yellow-o">o </span><span>2</span></a></li>
+        <li><a href=""><span class="logo-yellow-o">o </span><span>3</span></a></li>
+        <li><a href=""><span class="logo-yellow-o">o </span><span>4</span></a></li>
+        <li><a href=""><span class="logo-yellow-o">o </span><span>5</span></a></li>
+        <li><a href=""><span class="logo-yellow-o">o </span><span>6</span></a></li>
+        <li><a href=""><span class="logo-yellow-o">o </span><span>7</span></a></li>
+        <li><a href=""><span class="logo-yellow-o">o </span><span>8</span></a></li>
+        <li><a href=""><span class="logo-yellow-o">o </span><span>9</span></a></li>
+        <li><a href=""><span class="logo-yellow-o">o </span><span>10</span></a></li>
+        <li><a href=""><span class="logo-gle">gle </span><span>Next</span></a></li>
+      </ul>
+    </div>
+  </main>
+  <footer>
+    <div class="location-container-row">
+      <span class="circle"></span>
+      <strong class="location-text">90066, Culver City, CA</strong>
+      <span class="location-info">From your internet address</span>
+      -
+      <a href="" class="location-link">Use precise location</a>
+      -
+      <a href="" class="location-link">Learn More</a>
+    </div>
+    <div class="links-container-row">
+      <ul>
+        <li><a href="" class="footer-link">Help</a></li>
+        <li><a href="" class="footer-link">Send Feedback</a></li>
+        <li><a href="" class="footer-link">Privacy</a></li>
+        <li><a href="" class="footer-link">Terms</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
+</html>
